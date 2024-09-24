@@ -1,9 +1,30 @@
 import React from 'react'
+import {BrowserRouter as Router,Route, BrowserRouter, RouterProvider, createBrowserRouter} from 'react-router-dom';
+import { Join } from './components/Join';
+import { Chat } from './components/Chat';
 
-export const App = () => {
-  return (
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Join/>
+  },
+  {
+    path:'/chat',
+    element:<Chat/>
+  }
+])
+
+
+function App() {
+  return(
     <div>
-      <h1>Medical Pager chat app</h1>
+      <RouterProvider router={router}/>
     </div>
   )
 }
+
+export default App;
+
+
+
+
