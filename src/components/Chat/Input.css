@@ -1,0 +1,31 @@
+
+.form{
+    /* background-color: var(--primary-colour-1); */
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    border-radius: 16px;
+    gap: 0.2vw;
+    margin-bottom: 2%;
+}
+
+
+.form > * {
+    border-radius: 16px;
+    border: solid;
+    border-color: azure;
+}
+
+.input{
+    width: 90%;
+}
+
+.sendButton{
+    width: 10%;
+}
+
+.sendButton:hover {
+    cursor: pointer;
+}
+
+

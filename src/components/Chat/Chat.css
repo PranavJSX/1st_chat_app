@@ -1,0 +1,60 @@
+
+.outerContainer{
+    background: linear-gradient(81deg, #F24405 27.35%, #F34548 32.81%, #F44564 38.27%, #F54678 43.73%, #F54789 49.2%, #F64898 54.66%, #F748A5 60.12%, #F849B1 65.58%, #F94ABC 71.05%, #F94AC6 76.51%, #FA4BCF 81.97%, #FB4CD8 87.44%, #FC4CE1 92.9%, #FD4DE9 98.36%, #FD4EF0 103.82%, #FE4EF8 109.29%, #FF4FFF 114.75%);
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+
+}
+
+.left_container_for_info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vh;
+    width: 33vw;
+}
+
+.right_container_for_chat{
+    display: flex;
+    flex-direction:column;
+    gap: 0.2vh;
+    width: 67vw;
+}
+
+
+.first_container{
+    height: 43vh;
+}
+
+.third_container{
+    flex-grow: 1;
+}
+
+.left_container_for_info>div , .right_container_for_chat>div{
+    background-color: white;
+    margin: 0.6vh 0.6vw;
+    border-radius:16px;
+}
+.second_container{
+    max-height: 5vh;
+}
+
+
+.fourth_container{
+    /* FLE */
+    flex-grow: 1;
+    background-color: rgba(26, 41, 39, 1) !important;
+    padding: 1.5vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+} 
+    
+
+.messages_div{
+    margin-bottom: 20px;
+}

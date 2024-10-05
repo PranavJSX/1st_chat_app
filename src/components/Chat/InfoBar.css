@@ -1,0 +1,29 @@
+.leftInnerContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
+.leftInnerContainer>div{
+    padding: 0.1vw 0.1vw;
+}
+
+.onlineicon {
+    margin-top: 0;
+}
+.closeIconContainer{
+    position: absolute;
+    right: 1.2vw;
+    margin-top: 0;
+    /* transform: scale(2); */
+}
+
+
+.roomInfo{
+    font-size: 1.3vw;
+    margin-top: 0.7vh;
+}
+
+.closeicon , .onlineicon{
+    transform: scale(70%);
+}

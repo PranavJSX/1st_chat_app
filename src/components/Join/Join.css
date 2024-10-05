@@ -61,6 +61,7 @@ color: #FFFFFF;
     align-self: center;
     height: 6vh;
     color:  rgba(242, 68, 5, 1);
+    font-size: 1.2vw;
 }
 
 ::placeholder{
