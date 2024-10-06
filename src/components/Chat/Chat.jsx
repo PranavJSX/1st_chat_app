@@ -15,6 +15,7 @@ export const Chat = () => {
 
   const [room,setRoom] = useState('');
   const [name,setName] = useState('');
+  const [users,setUsers] = useState([]);
   const [message,setMessage] = useState([]);
   const [messages,setMessages] = useState([]);
 
@@ -42,10 +43,16 @@ export const Chat = () => {
     socket.on('message' , (message)=>{
       setMessages([...messages,message])
     })
-   },[messages]);
+    
+    socket.on('roomdata',({users})=>{
+      setUsers([...users,users])
+    })
+   },[messages],[users]);
 
 
-   const message_sent = true;
+   console.log(users);
+
+   
 
 
    //function for sending message
@@ -57,11 +64,6 @@ export const Chat = () => {
    }
 
 
-
-   console.log(message,messages);
-
-
-
   return (
     <div className='outerContainer'>
       <div className='left_container_for_info'>
@@ -69,7 +71,10 @@ export const Chat = () => {
         <h1>1st container</h1>
       </div>
       <div className='third_container'>
-        <h1>3st container</h1>
+        <h1>Users currently in the room:</h1>
+        {users.map(element=><>
+        <p className='user_names_print'>{element.name}</p>
+        </>)}
       </div>
       </div>
       <div className='right_container_for_chat'>
@@ -79,8 +84,7 @@ export const Chat = () => {
       <div className='fourth_container'>
         <div className='messages_div'>
           {messages.map(Element=><>
-          {console.log(Element)}
-          <Message message_sent={message_sent} message={Element} name={name}/>
+          <Message message={Element} name={name}/>
           </>)}
         </div>
         <div><Input message={message} setMessage = {setMessage} sendMessage={sendMessage}/></div>

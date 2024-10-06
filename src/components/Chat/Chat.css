@@ -58,3 +58,18 @@
 .messages_div{
     margin-bottom: 20px;
 }
+
+
+.user_names_print{
+    margin: 0px 0.5vw;
+    font-size: 2.2vw;
+    padding-left: 40%;
+    background-color: #F34548;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.user_names_print:hover{
+    background-color: black;
+    color: azure;
+    /* transform: translateX(1.2vw) */
+}

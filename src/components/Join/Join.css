@@ -8,7 +8,9 @@ body{
     --primary-colour-1:rgba(242, 68, 5, 1);
 }
 
-
+.messageContainer1>*{
+    overflow: hidden;
+}
 .Outer_div{
     width: 100%;
     display: flex;

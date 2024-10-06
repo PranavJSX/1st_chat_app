@@ -1,13 +1,49 @@
 
 .messages_main_div{
+    overflow: hidden;
     color:azure;
 }
 
 
-.messageContainer{
+.messageContainer1{
     color: rgb(0, 0, 0);
-    background-color: #000000;
+    /* background-color: aqua; */
 background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 border-radius: 16px;
+margin-bottom: 60vh;
 }
 
+.sentText{
+    padding: 0.5vw 0.5vw;
+    background-color: rgb(235, 235, 235);
+    margin-left: 0.5vw;
+}
+
+
+.messageText{
+    padding: 0.5vw 0.5vw;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+.messageContainer2{
+    color: rgb(0, 0, 0);
+    /* background-color: aqua; */
+    border-radius: 16px;
+}
+
+
+.messageBox{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
+
+
+.messageContainer1>*{
+    overflow: hidden;
+}
+
+.messageContainer2>*{
+    overflow: hidden;
+}
